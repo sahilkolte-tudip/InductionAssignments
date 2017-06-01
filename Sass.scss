@@ -1,0 +1,31 @@
+﻿$font:arial;
+$divi-color:white;
+$divi-bg:maroon;
+$divi-width: 100%;
+
+.divi {
+	
+	width:$divi-width;
+	background-color:$divi-bg;
+	color:$divi-color;
+	text-decoration:none;
+}
+.divi1{
+	
+	text-decoration:none;
+	background-color:green;
+	ul{
+		list-style-type:none;
+		
+		 li{
+		display:inline-block;
+		padding:15px;
+		}
+	}
+}
+
+
+
+
+
+	
