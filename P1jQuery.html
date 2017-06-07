@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		var counter=0;
+		$("#fbox").keypress(function(){
+			counter++;
+			$("#sbox").val(counter);
+		});
+			
+		});
+
+	
+	</script>
+</head>
+<body>
+Enter the String here:
+	<input type="text" id="fbox">
+	<br><br>
+Number of keystrokes are:
+	<input type="text" id="sbox">
+	
+</body>
+</html>

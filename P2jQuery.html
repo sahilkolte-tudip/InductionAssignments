@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#p1").hover(function(){
+				$(this).css("color","red");
+			},
+			function(){
+				$(this).css("color","black");
+			});
+		});
+	</script>
+</head>
+<body>
+<p id="p1" style="font-size:20px">Hover the mouse over here to see the change in color
+</p>
+
+</body>
+</html>
