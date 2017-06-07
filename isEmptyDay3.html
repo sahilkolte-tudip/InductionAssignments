@@ -1,0 +1,26 @@
+<!doctype html>
+<html> 
+<body>
+<div>
+	<p> Enter the String</P>
+	<input type="text" id="test">
+	<input type="button" value="Enter" onclick="isEmpty()">
+	<p id="demo"></p>
+</div>
+<script >
+
+	function isEmpty(){
+	var i= document.getElementById("test").value;
+    
+	if(i==null || i=="")
+	{
+	document.getElementById("demo").innerHTML = "True";
+	}
+	else
+	{
+	document.getElementById("demo").innerHTML = "False";
+	}
+	}
+</script>
+</body>
+</html>
