@@ -1,0 +1,28 @@
+<doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h2>Table data</h2>
+<button onclick="show()">Click here to see the table</button>
+<div id="demo"></div>
+<script>
+	function show() 
+	{
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange=function()
+		{
+			if (this.readyState==4 && this.status==200) 
+			{
+				document.getElementsByTagName("demo").innerHTML=this.responseText;
+			}
+		};
+		xhttp.open("GET","AJAXdemo.txt",true);
+		xhttp.send();
+	}
+</script>
+
+
+</body>
+</html>
